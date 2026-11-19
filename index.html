@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>BMI Calculator</h1>
+            <p>Calculate Your Body Mass Index</p>
+        </header>
+
+        <!-- Calculator Layout -->
+        <div class="calculator-layout">
+
+            <!-- input leftside -->
+            <div class="Calculator">
+
+                <h2>User Details</h2>
+
+                <!-- Gender -->
+                <div class="input">
+                    <label>Gender</label>
+
+                    <div class="gender">
+                        <input type="radio" id="male"
+                        name="gender" value="male">
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female"
+                        name="gender" value="female">
+                        <label for="female">Female</label>
+
+                        <input type="radio" id="others"
+                        name="gender" value="others">
+                        <label for="others">Others</label>
+                    </div>
+                </div>
+
+                <!-- Age -->
+                <div class="input">
+                    <label for="age">Age (Years)</label>
+                    <input class="type" type="number"
+                    id="age" placeholder="Enter Your Age">
+                </div>
+
+                <!-- Height -->
+                <div class="input">
+                    <label for="height">Height (cm)</label>
+                    <input class="type" type="number"
+                    id="height" placeholder="Enter Your Height">
+                </div>
+
+                <!-- Weight -->
+                <div class="input">
+                    <label for="weight">Weight (kg)</label>
+                    <input class="type" type="number"
+                    id="weight" placeholder="Enter Your Weight">
+                </div>
+
+                <!-- Button -->
+                <button onclick="calculatebmi()">
+                    Calculate BMI
+                </button>
+
+            </div>
+
+            <!-- Result Rightside -->
+            <div class="result">
+
+                <h2>BMI Result</h2>
+
+                <h3 id="bmivalue">--</h3>
+
+                <p id="bmicategory">
+                    Your BMI Result Will Appear Here
+                </p>
+
+                <div class="healthy">
+                    <h4>Healthy BMI Range</h4>
+                    <p>18.5 - 24.9</p>
+                </div>
+
+                <p id="resultmessage">
+                    Enter your details to calculate your BMI.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom Image -->
+        <div class="image">
+            <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrdJ7FWGu2l9tGE3_R1x7Er5i_L8c2cKAkjiEOux8gcg&s=10"
+            alt="BMI reference chart">
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>

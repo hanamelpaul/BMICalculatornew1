@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef4f9;
+    color: #263445;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #173b63;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #718096;
+    font-size: 16px;
+}
+
+.calculator-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.Calculator {
+    background-color: #f3f7fb;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.Calculator h2 {
+    color: #173b63;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.input {
+    margin-bottom: 18px;
+}
+
+.input > label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+.type {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+}
+
+.type:focus {
+    border-color: #3182ce;
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gender input {
+    cursor: pointer;
+}
+
+.gender label {
+    cursor: pointer;
+    font-weight: normal;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background-color: #2463a6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #174b80;
+}
+
+.result {
+    background-color: #edf5fc;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.result h2 {
+    color: #173b63;
+    margin-bottom: 25px;
+}
+
+#bmivalue {
+    font-size: 42px;
+    color: #2463a6;
+    margin-bottom: 12px;
+}
+
+#bmicategory {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.healthy {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.healthy h4 {
+    color: #34495e;
+    margin-bottom: 8px;
+}
+
+.healthy p {
+    color: #16a34a;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#resultmessage {
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.underweight {
+    color: #dc2626 !important;
+}
+
+.normal {
+    color: #16a34a !important;
+}
+
+.overweight {
+    color: #d69e00 !important;
+}
+
+.obese {
+    color: #dc2626 !important;
+}
+
+.image {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.image img {
+    width: 100%;
+    max-width: 100%;
+    height: 350px;
+    border-radius: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 650px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+
+    .header h1 {
+        font-size: 27px;
+    }
+
+    .calculator-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .Calculator,
+    .result {
+        padding: 20px;
+    }
+
+    #bmivalue {
+        font-size: 35px;
+    }
+
+    .image img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
